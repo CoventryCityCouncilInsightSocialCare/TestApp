@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Children's Services Dashboard</title>
+
+    styles.css
+</head>
+
+<body>
+
+<header>
+    <h1>Children's Services Analytics Portal</h1>
+    <p>Performance & Insight Dashboard</p>
+</header>
+
+<div class="dashboard">
+
+    <div class="card kpi">
+        <h3>Open Cases</h3>
+        <span>1,248</span>
+    </div>
+
+    <div class="card kpi">
+        <h3>Assessments Completed</h3>
+        <span>92%</span>
+    </div>
+
+    <div class="card kpi">
+        <h3>Early Help Referrals</h3>
+        <span>347</span>
+    </div>
+
+    <div class="card kpi">
+        <h3>Visits In Time</h3>
+        <span>95%</span>
+    </div>
+
+</div>
+
+<div class="content">
+
+    <div class="card">
+        <h2>Service Areas</h2>
+
+        <select id="teamFilter">
+            <option value="all">All Teams</option>
+            <option value="Assessment">Assessment</option>
+            <option value="Early Help">Early Help</option>
+            <option value="MASH">MASH</option>
+        </select>
+
+        <table id="serviceTable">
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>Cases</th>
+                    <th>Performance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-team="Assessment">
+                    <td>Assessment</td>
+                    <td>412</td>
+                    <td>91%</td>
+                </tr>
+                <tr data-team="Early Help">
+                    <td>Early Help</td>
+                    <td>376</td>
+                    <td>94%</td>
+                </tr>
+                <tr data-team="MASH">
+                    <td>MASH</td>
+                    <td>460</td>
+                    <td>97%</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <div class="card">
+        <h2>Recent Updates</h2>
+
+        <ul class="updates">
+            <li>✅ Monthly performance data refreshed</li>
+            <li>✅ New Early Help measures added</li>
+            <li>✅ Fabric semantic model connected</li>
+            <li>✅ Power BI workspace published</li>
+        </ul>
+    </div>
+
+</div>
+
+script.jsscript>
+
+</body>
+</html>
